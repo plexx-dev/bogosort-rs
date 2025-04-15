@@ -1,5 +1,3 @@
-#![feature(is_sorted)]
-
 extern crate rand;
 extern crate actix;
 
@@ -11,7 +9,7 @@ pub fn test() {
     let now = Instant::now();
     let mut rng = rand::thread_rng();
 
-    let mut test: Vec<i32> = (0..12).collect();
+    let mut test: Vec<i32> = (0..13).collect();
     test.shuffle(&mut rng);
 
     let mut threads = vec![];
